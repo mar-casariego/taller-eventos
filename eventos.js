@@ -2,8 +2,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const boton = document.getElementById('button');
     const div = document.getElementById('div');
 
-    boton.addEventListener('click', () => {
+    boton.addEventListener('click', (event) => {
         alert('Hola!');
+        event.stopPropagation();
     });
 
     div.addEventListener('click', () => {
